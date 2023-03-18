@@ -39,6 +39,8 @@ const renderPokemon = async (pokemon) => {
             pokeImg.style.bottom = '51.5%'
         } else if (data.id < 1009) {
             pokeImg.src = data['sprites']['front_default'];
+            pokeImg.style.height = '28%'
+            pokeImg.style.bottom = '51.5%'
         } else {
             pokeImg.style.display = 'none';
             pokeNum.innerHTML = '';
