@@ -9,7 +9,7 @@ const btnNext = document.querySelector('.btnNext');
 
 let pokeSearch = 1;
 const fetchPokemon = async (pokemon) => {
-    const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`)
+    const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
     console.log(APIResponse)
     if (APIResponse.status === 200) {
         const data = await APIResponse.json();
@@ -58,7 +58,7 @@ const renderPokemon = async (pokemon) => {
 pokeForm.addEventListener('submit', (event) => {
     event.preventDefault();
     console.log('enviando formulário...');
-    renderPokemon(pokeInput.value);
+    renderPokemon(pokeInput.value.toLowerCase());
 });
 btnPrev.addEventListener('click', () => {
     if (pokeSearch > 1) {
