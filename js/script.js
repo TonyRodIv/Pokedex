@@ -32,13 +32,17 @@ const renderPokemon = async (pokemon) => {
             pokeImg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
         } else if (data.id < 722) {
             pokeImg.src = data['sprites']['versions']['generation-vi']['x-y']['front_default'];
-            
+
         } else if (data.id < 808) {
             pokeImg.src = data['sprites']['versions']['generation-vii']['ultra-sun-ultra-moon']['front_default'];
             pokeImg.style.height = '28%'
             pokeImg.style.bottom = '51.5%'
-        } else {
+        } else if (data.id < 1009) {
             pokeImg.src = data['sprites']['front_default'];
+        } else {
+            pokeImg.style.display = 'none';
+            pokeNum.innerHTML = '';
+            pokeName.innerHTML = 'Not found :(';
         }
         pokeInput.value = '';
         pokeSearch = data.id;
