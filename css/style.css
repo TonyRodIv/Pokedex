@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Oxanium', cursive;
+  text-decoration: none;
 }
 
 body {
@@ -88,4 +89,14 @@ main {
 .button:active{
     box-shadow: inset -4px 4px 0 #222;
     font-size: 14.4px;
+}
+p{
+  color: #222;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+p:hover{
+  color: brown;
+
 }
