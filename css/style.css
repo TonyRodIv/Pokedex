@@ -30,7 +30,8 @@ main {
   bottom: 55%;
   left: 50%;
   transform: translate(-63%, 20%);
-  height: 18%;
+  max-height: 18%;
+  max-width: 30%;
 }
 
 .pokeData {
