@@ -21,7 +21,12 @@
 }
 @media (min-width: 601px) {
   body{
-    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    /* background: linear-gradient(to bottom, #6ab7f5, #fff); */
+    background-color: #C6182F;
+    background-image: url(../img/pokeball2.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 30%;
   }
   main{
     margin-top: 3%;
@@ -110,12 +115,12 @@ main {
     font-size: 14.4px;
 }
 p{
-  color: #222;
+  color: #131313;
   text-align: center;
   font-weight: 600;
   font-size: 1.2rem;
 }
 p:hover{
-  color: brown;
+  color: rgb(255, 255, 255);
 
 }
