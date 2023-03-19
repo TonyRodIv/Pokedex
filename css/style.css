@@ -7,16 +7,36 @@
   font-family: 'Oxanium', cursive;
   text-decoration: none;
 }
+@media (max-width: 600px) {
+  body {
+    background-color: #C6182F;
+    background-image: url(../img/pokeball3.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 55%;
+  }
+  main{
+    margin-top: 32%;
+  }
+}
+@media (min-width: 601px) {
+  body{
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+  }
+  main{
+    margin-top: 3%;
+  }
+}
 
 body {
   text-align: center;
-  background: linear-gradient(to bottom, #6ab7f5, #fff);
+  
   min-height: 100vh;
 }
 
 main {
   display: inline-block;
-  margin-top: 2%;
+  /* margin-top: 3%; */
   padding: 15px;
   position: relative;
 }
