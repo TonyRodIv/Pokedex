@@ -7,7 +7,7 @@
   "orientation": "any",
   "scope": "/index.html",
   "short_name": "Pokedex",
-  "start_url": "/",
+  "start_url": "https://tonyrodiv.github.io/Pokedex",
   "theme_color": "#c6182f",
   "categories": [],
   "screenshots": [],
