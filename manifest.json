@@ -6,7 +6,7 @@
   "name": "Pokédex",
   "orientation": "any",
   "scope": "index.html",
-  "short_name": "Pokedex",
+  "short_name": "Pokédex",
   "start_url": "https://tonyrodiv.github.io/Pokedex/",
   "theme_color": "#c6182f",
   "categories": [],
