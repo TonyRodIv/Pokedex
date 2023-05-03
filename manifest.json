@@ -1,0 +1,23 @@
+{
+  "background_color": "#c6182f",
+  "description": "Projeto feito com base no vídeo da Pokedex do \"Manual do Dev\" no Youtube com algumas melhorias e um botão para Pokémons shiny",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Pokédex",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Pokedex",
+  "start_url": "/index.html",
+  "theme_color": "#c6182f",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "./favicons/pokeball.png",
+      "type": "image/png",
+      "sizes": "320x320"
+    }
+  ],
+  "shortcuts": [],
+  "lang": "pt"
+}
