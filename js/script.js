@@ -19,6 +19,7 @@ const fetchPokemon = async (pokemon) => {
 };
 
 const renderPokemon = async (pokemon) => {
+    checkboxShiny.checked = false;
     pokeNum.innerHTML = '';
     pokeName.innerHTML = 'Loading...';
     const data = await fetchPokemon(pokemon);
