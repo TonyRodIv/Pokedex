@@ -114,25 +114,46 @@ main {
   font-weight: 600;
   color: #fff;
 }
-.btnShiny{
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.btnShiny {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
   border: 2px solid #000;
   background-color: #444444;
   color: rgb(255, 224, 145);
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
 }
-.btnShiny:hover{
+
+.btnShiny:hover {
+  color: rgb(252, 212, 113);
+  background-image: linear-gradient(90deg, #3d3d3d 0%, #353535 50%, #424242 75%, #3d3d3d 100%);
+  animation: slidernbw 5s linear infinite;
+}
+
+input:checked~.btnShiny {
   background-image: linear-gradient(90deg, #E1C03D 0%, #cab560 50%, #d1bd6c 75%, #E1C03D 100%);
-  /* background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%); */
   animation: slidernbw 5s linear infinite;
   color: #000;
 }
-.btnShiny:active{
-  background-image: linear-gradient(90deg, #E1C03D 0%, #cab560 50%, #d1bd6c 75%, #E1C03D 100%);
-  /* background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%); */
-  animation: slidernbw 5s linear infinite;
-  box-shadow: -2px 3px 0 #474600;
-  color: #000;
-}
+
+
+
+
 
 .btnPrev,
 .btnNext {
@@ -157,8 +178,9 @@ p:hover {
   color: rgb(255, 255, 255);
 
 }
+
 @keyframes slidernbw {
   to {
-   background-position: 20vw;
+    background-position: 20vw;
   }
- }
+}

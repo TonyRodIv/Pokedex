@@ -8,7 +8,7 @@
 
     <meta name="theme-color" content="#C6182F">
     <link rel="apple-touch-icon" href="./AppImages/ios/192.png">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <link rel="canonical" href="https://tonyrodiv.github.io/Pokedex/">
 
     <link rel="stylesheet" href="./css/style.css">
@@ -20,28 +20,37 @@
 <body>
     <script>
         if (typeof navigator.serviceWorker !== 'undefined') {
-          navigator.serviceWorker.register('sw.js')
+            navigator.serviceWorker.register('sw.js')
         }
-      </script>
-      
+    </script>
+
     <main>
-        <img src="#"
-            alt="pokemon" class="pokeImg">
-            <h1 class="pokeData">
-                <span class="pokeNum"></span> - 
-                <span class="pokeName"></span>
-            </h1>
-            <form class="pokeForm">
-                <input type="search" class="inputSearch" placeholder="Name or Number" required>
-            </form>
-            <div class="buttons">
-                <buton class="button btnPrev">&lt; Prev</buton>
-                <button class="button btnShiny">Shiny</button>
-                <buton class="button btnNext">Next &gt;</buton>
-            </div>
+        <img src="#" alt="pokemon" class="pokeImg">
+        <h1 class="pokeData">
+            <span class="pokeNum"></span> -
+            <span class="pokeName"></span>
+        </h1>
+        <form class="pokeForm">
+            <input type="search" class="inputSearch" placeholder="Name or Number" required>
+        </form>
+        <div class="buttons">
+            <buton class="button btnPrev">&lt; Prev</buton>
+            <!-- <button class="button btnShiny">Shiny</button> -->
+
+            <label class="switch">
+                <input type="checkbox" id="shinyChange">
+                <div class="button btnShiny">
+                    Shiny
+                </div>
+            </label>
+
+            <buton class="button btnNext">Next &gt;</buton>
+        </div>
         <img src="./img/pokedex.png" class="pokedex" alt="" srcset="">
     </main>
-    <a href="https://github.com/TonyRodIv/Pokedex"><p>@TonyRodIv on GitHub</p></a>
+    <a href="https://github.com/TonyRodIv/Pokedex">
+        <p>@TonyRodIv on GitHub</p>
+    </a>
     <script src="./js/script.js"></script>
 </body>
 

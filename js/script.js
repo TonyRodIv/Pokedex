@@ -49,8 +49,17 @@ const renderPokemon = async (pokemon) => {
     }
 };
 
+let checkboxShiny = document.getElementById('shinyChange')
 
-btnShiny.addEventListener('click', async () => {
+checkboxShiny.addEventListener("change", ()=>{
+    if(checkboxShiny.checked){
+        console.log(renderShiny())
+    }else{
+        console.log(renderPokemon(pokeSearch))
+    }
+})
+
+const renderShiny = async () => {
     const data = await fetchPokemon(pokeSearch);
     pokeNum.innerHTML = data.id;
     if (data.id < 650) {
@@ -64,7 +73,7 @@ btnShiny.addEventListener('click', async () => {
     }else{
         alert('ERRO 404 - NÃO TEMOS POKEMONS SHINY EM NOSSA BASE DE DADOS PÓS ID:905')
     }
-});
+};
 
 pokeForm.addEventListener('submit', (event) => {
     event.preventDefault();
