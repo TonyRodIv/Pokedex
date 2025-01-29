@@ -26,8 +26,5 @@ O objetivo deste projeto é criar uma Pokédex interativa e funcional, utilizand
 - Possibilidade de alternar entre a versão normal e shiny dos Pokémon.
 - Transformação em PWA
 
-## 🏫 Contexto
-Este projeto foi realizado como parte do aprendizado prático em desenvolvimento web. Ele combina conceitos de consumo de APIs, manipulação de DOM com JavaScript, design responsivo e implementação de Progressive Web Apps.
-
 ---
 **Nota:** Este README pode ser atualizado conforme novas funcionalidades sejam implementadas ou melhorias sejam feitas no projeto.
