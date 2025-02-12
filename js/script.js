@@ -56,13 +56,9 @@ const renderShiny = async () => {
     if (data.id < 650) {
         pokeImg.style.height = '18%'
         pokeImg.style.bottom = '55%'
-        pokeImg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_shiny'];
-    } else if (data.id < 906) {
-        pokeImg.src = data['sprites']['front_shiny'];
-        pokeImg.style.height = '24%'
-        pokeImg.style.bottom = '52.5%'
+        pokeImg.src = data['sprites']['other']['showdown']['front_shiny'];
     }else{
-        alert('ERRO 404 - NÃO TEMOS POKEMONS SHINY EM NOSSA BASE DE DADOS PÓS ID:905')
+        alert('ERRO 404 - NÃO TEMOS POKEMONS SHINY NA BASE DE DADOS')
     }
 };
 
