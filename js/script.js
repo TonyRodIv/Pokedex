@@ -30,17 +30,7 @@ const renderPokemon = async (pokemon) => {
 
         pokeImg.style.height = '18%'
         pokeImg.style.bottom = '55%'
-        if (data.id < 650) {
-            pokeImg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
-        } else if (data.id < 1009) {
-            pokeImg.src = data['sprites']['front_default'];
-            pokeImg.style.height = '24%'
-            pokeImg.style.bottom = '52.5%'
-        } else {
-            pokeImg.style.display = 'none';
-            pokeNum.innerHTML = '';
-            pokeName.innerHTML = 'Not found :(';
-        }
+            pokeImg.src = data['sprites']['other']['showdown']['front_default'];
         pokeInput.value = '';
         pokeSearch = data.id;
     } else {
