@@ -30,7 +30,7 @@ const renderPokemon = async (pokemon) => {
 
         pokeImg.style.height = '18%'
         pokeImg.style.bottom = '55%'
-            pokeImg.src = data['sprites']['other']['showdown']['front_default'];
+        pokeImg.src = data['sprites']['other']['showdown']['front_default'];
         pokeInput.value = '';
         pokeSearch = data.id;
     } else {
@@ -53,12 +53,9 @@ checkboxShiny.addEventListener("change", ()=>{
 const renderShiny = async () => {
     const data = await fetchPokemon(pokeSearch);
     pokeNum.innerHTML = data.id;
-    if (data.id < 650) {
-        pokeImg.style.height = '18%'
-        pokeImg.style.bottom = '55%'
-        pokeImg.src = data['sprites']['other']['showdown']['front_shiny'];
-    }else{
-        alert('ERRO 404 - NÃO TEMOS POKEMONS SHINY NA BASE DE DADOS')
+    pokeImg.src = data['sprites']['other']['showdown']['front_shiny'];
+    if (pokeImg.src == null) {
+        alert('ERRO 404 - NÃO TEMOS ESSE POKEMON SHINY NA BASE DE DADOS')
     }
 };
 
