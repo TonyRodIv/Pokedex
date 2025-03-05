@@ -12,7 +12,7 @@ O objetivo deste projeto é criar uma Pokédex interativa e funcional, utilizand
   - Alternância entre versão normal e shiny.
 - **Design Responsivo:**
   - Compatível com dispositivos móveis e desktops.
-- **Progressive Web App (PWA):**
+- **Progressive Web App (PWA):** (Essa funcionalidade está com um bug que será resolvido em breve)
   - Possibilidade de instalar o site como um aplicativo.
 
 ## 🛠️ Tecnologias Utilizadas
