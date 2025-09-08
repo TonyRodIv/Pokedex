@@ -40,7 +40,7 @@
 body {
   text-align: center;
 
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 main {
@@ -185,3 +185,4 @@ p:hover {
   }
 
 }
+
